@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181818;
+  color: #f7f7f7;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.card {
+  border: 2px solid lightgray;
+  margin: 24px;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  border: none;
+  border: 1px solid #f7f7f7;
+  border-radius: 8px;
+
+  font-weight: 800;
+  font-size: 20px;
+
+  color: #f7f7f7;
+
+  width: fit-content;
+  height: fit-content;
+
+  padding: 8px;
+
+  min-width: 64px;
+
+  cursor: pointer;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  border: none;
+  border: 1px solid #f7f7f7;
+  border-radius: 8px;
+
+  color: #f7f7f7;
+
+  width: fit-content;
+  height: fit-content;
+
+  font-size: 18px;
+
+  padding: 8px;
+
+  outline: none;
+
+  transition: border 0.1s;
+}
+
+.input:focus {
+  border-width: 3px;
+}
+
+.suspense {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.suspense__img {
+  width: 4px;
+  height: 4px;
+}
+
+.suspense__button {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.reducer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.reducer + .reducer {
+  margin-top: 32px;
+}
+
+.reducer__buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.useRef {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.chat {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.chat__userlist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.chat__userlist__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+.chat__messagelist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: left;
+}
